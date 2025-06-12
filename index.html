@@ -1,0 +1,20 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Param Test</title>
+  <style>body{font-family:sans-serif;margin:2rem}code{background:#eee;padding:2px 4px;border-radius:4px}</style>
+</head>
+<body>
+  <h1>Hello!</h1>
+  <p id="out">What do you see</p>
+
+  <script>
+    const p = new URLSearchParams(location.search);
+    if (p.toString())
+      out.innerHTML = [...p].map(([k,v]) => `<code>${k}</code>=<code>${v}</code>`).join('<br>');
+  </script>
+</body>
+</html>
+```
